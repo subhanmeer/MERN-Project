@@ -102,7 +102,7 @@ router.post("/register", function(req, res ) {
 router.post("/login", passport.authenticate("local", {
     failureRedirect: "/",
     successRedirect: "/profile",
-}), function(req, res) {});
+}), function() {});
 
 
 router.get("/logout", function(req, res, next) {
